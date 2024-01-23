@@ -1,0 +1,66 @@
+// Static method
+class Static
+{
+  static int a=99;
+   int b=10;
+ 
+  static void meth()
+   {
+     System.out.println("This is a  static method");
+   }
+
+ static
+  {
+  System.out.println("This is a  static block in Stastic class");
+  }
+  
+   
+  {
+  System.out.println("This is a  static instance block in  Demo class");
+  }
+ }
+class Demo
+{
+ public static void main(String args[])
+ { 
+  System.out.println("Hello");
+
+    System.out.println(Static.a);
+    
+     Static.meth();
+
+    Static s=new Static();
+    Static s1=new Static();
+    
+    System.out.println(s.a);
+    System.out.println(s1.a);
+  
+    s.a=100;
+    System.out.println(s.a);
+    System.out.println(s1.a);
+
+   s.meth();
+   s1.meth();
+    
+ }
+}
+
+/*
+
+G:\java 1,24>javac Demo.java
+
+G:\java 1,24>java Demo
+Hello
+This is a  static block in Stastic class
+99
+This is a  static method
+This is a  static instance block in  Demo class
+This is a  static instance block in  Demo class
+99
+99
+100
+100
+This is a  static method
+This is a  static method
+
+*/
