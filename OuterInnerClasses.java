@@ -1,3 +1,4 @@
+/*Declare  a number in inner class. Write method checkPrime() on outer class which check whether  what number is prime or not.*/
 class  Outer
 {
  Inner i=new Inner();
