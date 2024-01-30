@@ -29,6 +29,42 @@ class Super
  }
 }
 
+/**s.java
+class s 
+{
+ public static void main(String args[])
+ {
+  Mybox m=new Mybox(10,10,10,5);
+  m.valume();
+ m.mass();
+  
+  
+ }
+}
+
+/*
+G:\java 1,24>javac s.java
+
+G:\java 1,24>java s
+Valume=1000.0
+
+G:\java 1,24>javac s.java
+
+G:\java 1,24>java s
+Valume=1000.0
+Mass=5000.0
+
+G:\java 1,24>javac Super.java
+
+G:\java 1,24>java Super
+Valume=1000.0
+Mass=5000.0
+
+G:\java 1,24>javac s.java
+
+*/
+
+**/
 
 /*
 
