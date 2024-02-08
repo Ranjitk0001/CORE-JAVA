@@ -19,7 +19,8 @@ class DescribeException
          System.out.println("k="+k);
         }
 
-      catch(Exception e)
+     
+      catch(ArrayIndexOutOfBoundsException e)
         {
           System.out.println(e);
    	}  
