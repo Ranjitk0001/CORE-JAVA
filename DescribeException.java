@@ -19,7 +19,10 @@ class DescribeException
          System.out.println("k="+k);
         }
 
-     
+      catch(ArithmeticException e)
+        {
+          System.out.println(e);
+   	}
       catch(ArrayIndexOutOfBoundsException e)
         {
           System.out.println(e);
@@ -34,3 +37,14 @@ class DescribeException
   }
 
 }
+
+/*
+G:\java 1,24>javac DescribeException.java
+
+G:\java 1,24>java DescribeException 8
+k=12
+After Catch
+Myclass: Description of Myclass
+
+G:\java 1,24>
+*/
